@@ -21,9 +21,8 @@ class TriviaTestCase(unittest.TestCase):
         """Define test variables and initialize app."""
         self.app = create_app()
         self.client = self.app.test_client
-        self.database_name = "agency_test"
-        self.database_path = "mysql://{}:{}@{}/{}".format(
-            'admin', 'admin', 'localhost', self.database_name)
+        # self.database_name = "agency_test"
+        self.database_path = os.environ.get('DATABASE_URL')
         setup_db(self.app, self.database_path)
 
         actor = Actor(name='Test_actor', age=30, gender='M')

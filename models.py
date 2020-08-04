@@ -4,8 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_utils import create_database, database_exists
 import json
 import sys
-database_name = "agency"
-database_path = os.environ.get('SQLALCHEMY_DATABASE_URI')
+database_path = os.environ.get('DATABASE_URL')
 
 db = SQLAlchemy()
 
@@ -23,7 +22,6 @@ def setup_db(app, database_path=database_path):
         app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
         db.app = app
         db.init_app(app)
-        db.create_all()
     except Exception:
         print(sys.exc_info())
 

@@ -5,9 +5,9 @@ from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
 
-AUTH0_DOMAIN = 'dev-gxqb4md6.us.auth0.com'
+AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN')
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'api-fsnd-capstone'
+API_AUDIENCE = os.environ.get('API_AUDIENCE')
 
 '''
 AuthError Exception

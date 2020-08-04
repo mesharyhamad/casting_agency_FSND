@@ -37,6 +37,13 @@ def create_app(test_config=None):
           It should require the 'get:actors' permission
     '''
 
+    @app.route('/', methods=['GET'])
+    def get_actors():
+
+        return jsonify({
+            'success': True,
+        }), 200
+
     @app.route('/actors', methods=['GET'])
     @requires_auth('get:actors')
     def get_actors(token):
@@ -288,3 +295,8 @@ def create_app(test_config=None):
         return jsonify(e.error), e.status_code
 
     return app
+
+APP = create_app()
+
+if __name__ == '__main__':
+    APP.run(host='0.0.0.0', port=8080, debug=True)
