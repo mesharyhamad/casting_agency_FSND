@@ -1,7 +1,6 @@
 alembic==1.4.2
 aniso8601==8.0.0
 appdirs==1.4.4
-apturl==0.7.8
 asn1crypto==0.24.0
 astroid==2.2.5
 attrs==18.1.0
