@@ -13,7 +13,6 @@ backpack==0.1
 blinker==1.4
 bs4==0.0.1
 botocore==1.17.28
-Brlapi==0.6.6
 certifi==2018.1.18
 cffi==1.14.0
 chardet==3.0.4
