@@ -22,7 +22,6 @@ clikit==0.6.0
 colorama==0.3.7
 crashtest==0.3.0
 cryptography==2.9.2
-distro-info===0.18ubuntu0.18.04.1
 docutils==0.15.2
 ecdsa==0.13.2
 Faker==0.8.18
