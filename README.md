@@ -8,16 +8,6 @@
 
 Follow instructions to install the latest version of python for your platform in the [python docs](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
 
-#### Mysql
-
-Follow instructions to install the latest version of mysql for your platform in the [mysql docs](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/)
-
-
-## Install dependencies of mysql for python
-
-- `sudo apt-get install python-mysqldb`
-- `sudo apt-get install python3.7-dev libmysqlclient-dev`
-
 
 #### Virtual Enviornment
 
@@ -42,12 +32,6 @@ This will install all of the required packages we selected within the `requireme
 - [jose](https://python-jose.readthedocs.io/en/latest/) JavaScript Object Signing and Encryption for JWTs. Useful for encoding, decoding, and verifying JWTS.
 
 
-## Database Setup
-With Mysql running, restore a database using the agency.sql file provided. From the backend folder in terminal run:
-```bash
-mysql agency < agency.sql
-```
-
 ## Running the server
 
 From within the project directory first ensure you are working using your created virtual environment.
@@ -55,7 +39,7 @@ From within the project directory first ensure you are working using your create
 To run the server, execute:
 
 ```bash
-export FLASK_APP=flaskr
+export FLASK_APP=app.py
 export FLASK_ENV=development
 export SQLALCHEMY_DATABASE_URI=mysql://admin:admin@localhost/agency
 flask run
