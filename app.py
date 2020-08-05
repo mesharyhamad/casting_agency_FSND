@@ -38,7 +38,7 @@ def create_app(test_config=None):
     '''
 
     @app.route('/', methods=['GET'])
-    def get_actors():
+    def list_actors():
 
         return jsonify({
             'success': True,

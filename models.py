@@ -1,7 +1,6 @@
 import os
 from sqlalchemy import Column, String, Integer, create_engine
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy_utils import create_database, database_exists
 import json
 import sys
 database_path = os.environ['DATABASE_URL']
@@ -17,8 +16,6 @@ setup_db(app)
 def setup_db(app, database_path=database_path):
     try:
         app.config["SQLALCHEMY_DATABASE_URI"] = database_path
-        if not database_exists(app.config["SQLALCHEMY_DATABASE_URI"]):
-            create_database(app.config["SQLALCHEMY_DATABASE_URI"])
         app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
         db.app = app
         db.init_app(app)
