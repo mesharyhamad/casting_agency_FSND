@@ -20,7 +20,6 @@ cleo==0.8.1
 Click==7.0
 clikit==0.6.0
 colorama==0.3.7
-command-not-found==0.3
 crashtest==0.3.0
 cryptography==2.9.2
 cupshelpers==1.0
