@@ -85,38 +85,38 @@ python test_flaskr.py
 ```
 
 ## API status code
-###200 (OK)
+### 200 (OK)
 - Response json `{"success": true}`
 
-###400 (Bad Request)
+### 400 (Bad Request)
 - Response json `{"success": False,"error": 400,"message": " Bad Request"})`
 
-###404 (not found)
+### 404 (not found)
 - Response json `{
             "success": False,
             "error": 404,
             "message": "not found"
         })`
 
-###401 (Unauthorized)
+### 401 (Unauthorized)
 - Response json `{
             "success": False,
             "error": 500,
             "message": "Token expired |Authorization malformed | Permission not found in JWT |JWT not found
         }`
 
-###422 (unprocessable)
+### 422 (unprocessable)
 - Response json `{
             "success": False,
             "error": 422,
             "message": "unprocessable"
         }`
 
-###500 (Internal Server Error)
+### 500 (Internal Server Error)
 - Response json `{"success": False,  "error": 500,  "message": "Internal Server Error" }`
         
        
-##Endpoint APi Request and Response
+## Endpoint APi Request and Response
 
 
 Endpoints GET `'/actors' ` To  fetches all available actors
