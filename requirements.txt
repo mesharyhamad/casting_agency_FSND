@@ -90,7 +90,7 @@ pyasn1==0.4.2
 pycairo==1.16.2
 pycparser==2.20
 pycrypto==2.6.1
-pycryptodome==3.3.1
+pycryptodome==3.6.6
 pycups==1.9.73
 Pygments==2.6.1
 pyinotify==0.9.6
