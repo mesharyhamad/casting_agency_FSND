@@ -1,5 +1,11 @@
 # Casting Agency FSND
 
+## Project deployed at
+https://casting-agency-meshari.herokuapp.com
+
+## JWT to test app 
+You will find JWT on JWT_TEST_APP.json file 
+
 ## Getting Started
 
 ### Installing Dependencies
@@ -41,7 +47,7 @@ To run the server, execute:
 ```bash
 export FLASK_APP=app.py
 export FLASK_ENV=development
-export SQLALCHEMY_DATABASE_URI=mysql://admin:admin@localhost/agency
+export DATABASE_URL={YOUR_DATABASE_URL}
 flask run
 ```
 The `--reload` flag will detect file changes and restart the server automatically.

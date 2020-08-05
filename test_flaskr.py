@@ -3,7 +3,7 @@ import unittest
 import json
 from flask_sqlalchemy import SQLAlchemy
 
-from flaskr import create_app
+from app import create_app
 from models import Movie, Actor, setup_db
 
 JWT_TEST_APP = open('JWT_TEST_APP.json', )
