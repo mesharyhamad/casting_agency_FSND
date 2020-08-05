@@ -60,7 +60,8 @@ The `--reload` flag will detect file changes and restart the server automaticall
 - PATCH /actors/ and /movies/
 
 
-##Roles
+## Roles
+
 #### Casting Assistant
 - Can view actors and movies
 
