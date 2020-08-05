@@ -23,7 +23,7 @@ colorama==0.3.7
 crashtest==0.3.0
 cryptography==2.9.2
 docutils==0.15.2
-ecdsa==0.13.2
+ecdsa==0.13.3
 Faker==0.8.18
 Flask==1.0.2
 Flask-BabelEx==0.9.3
