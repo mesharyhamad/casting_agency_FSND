@@ -114,7 +114,7 @@ PyYAML==5.3.1
 reportlab==3.4.0
 requests==2.18.4
 requests-unixsocket==0.1.5
-rsa==4.5
+rsa==4.7
 s3transfer==0.3.3
 SecretStorage==2.3.1
 simplejson==3.13.2
