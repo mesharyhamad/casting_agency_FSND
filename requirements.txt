@@ -8,7 +8,7 @@ Authlib==0.14.3
 autopep8==1.4.4
 beautifulsoup4==4.8.2
 awscli==1.18.105
-Babel==2.8.0
+Babel==2.9.1
 backpack==0.1
 blinker==1.4
 bs4==0.0.1
